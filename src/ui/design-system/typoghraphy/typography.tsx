@@ -32,13 +32,11 @@ export const Typography = ({
         case "h1":
             variantStyles = "text-green-500";
             break;
-
-        
-
+            
         default:
             break;
     }
-    return <Component className={clsx(variantStyles,weight === "medium" && "font-medium", className)}>
+    return <Component className={clsx(variantStyles,weight === "medium" && "font-medium", className,"text-8xl")}>
             {children}
         </Component>;
 };

@@ -6,9 +6,9 @@ export default function Home() {
     <>
     <Seo title="Coding field" description="Description..."/>
     <Typography variant="h1" component="h1" >
-      Welcome to my app
+      Coding jungle
     </Typography>
-    <p>salut les codeur du futur</p>
+    
       
     </>
   );
