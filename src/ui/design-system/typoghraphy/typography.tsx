@@ -84,25 +84,31 @@ export const Typography = ({
 
     switch (theme) {
         case "black": //couleur par défaut
-            colorStyle = ""
+            colorStyle = "text-gray"
             break;
         case "gray":
-            colorStyle = ""
+            colorStyle = "text-gray-700"
             break;
         case "white":
-            colorStyle = ""
+            colorStyle = "text-white"
             break;
         case "primary":
-            colorStyle = ""
+            colorStyle = "text-primary"
             break;
         case "secondary":
-            colorStyle = ""
+            colorStyle = "text-secondary"
             break;    
         default:
             break;
     }
     
-    return <Component className={clsx(variantStyles, colorStyle, weight === "medium" && "font-medium", className,"text-8xl")}>
+    return <Component className={clsx(
+        variantStyles,
+        colorStyle, 
+        weight === "medium" && "font-medium", 
+        className,
+        
+        )}>
             {children}
         </Component>;
 };
