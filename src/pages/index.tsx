@@ -5,7 +5,7 @@ import { Typography } from "@/ui/design-system/typoghraphy/typography";
 export default function Home() {
   return (
     <>
-        <Seo title="Coding field" description="Description..."/>
+        <Seo title="Coding jungle" description="Description..."/>
 
         <div className="flex items-center gap-4 p-10">
 
