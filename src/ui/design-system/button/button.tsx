@@ -76,13 +76,28 @@ children,
             break;
     }
     return (<>
-    <button type="button"className={clsx(variantStyle,icoSize,sizeStyle,"")} onClick={()=>console.log('Clicked Button')}disabled={disabled}>
+   <button
+        type="button"
+        className={clsx(variantStyle, icoSize, sizeStyle, "")}
+        onClick={() => console.log('Clicked Button')}
+        disabled={disabled}
+        >
         {icon && variant === "ico" ? (
-        <icon.icon size={icoSize}/>
-        ) : <>{children}</>}
-        
+            <icon.icon size={icoSize} />
+        ) : (
+            <div className={clsx(icon && "flex items-center gap-1")}>
 
-    </button>
+                {icon && iconPosition === "left"  &&(
+                    <icon.icon size={icoSize} />
+                )}
+            {children}
+                {icon && iconPosition === "right"  &&(
+                    <icon.icon size={icoSize} />
+                )}
+            </div>
+        )}
+</button>
+
     
     </>);
 }

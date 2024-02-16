@@ -11,7 +11,7 @@ export default function Home() {
 
         <div className="flex items-center gap-4 p-10">
 
-              <Button>Accent</Button>
+              <Button size="small" icon={{icon:RiUser6Fill}} iconPosition="left">Accent</Button>
               <Button size="small" variant="secondary">Accent</Button>
               <Button size="small" variant="outline">Accent</Button>
               <Button size="small" variant="disabled" disabled>Accent</Button>
