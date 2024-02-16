@@ -13,6 +13,15 @@ export default function Home() {
             <Spinner size="medium"></Spinner>
             <Spinner size="large"></Spinner>
         </div>
+        <div className="flex items-center gap-4 p-5">
+
+              <Button isLoading size="small" icon={{icon:RiUser6Fill}} iconPosition="left">Accent</Button>
+              <Button isLoading size="small" >Accent</Button>
+              <Button isLoading size="small" variant="outline">Accent</Button>
+              <Button isLoading size="small" variant="disabled" disabled>Accent</Button>
+              <Button isLoading size="small" variant="ico" icon={{icon:RiUser6Fill}}/> 
+              </div>
+
        
 
         <div className="flex items-center gap-4 p-10">
