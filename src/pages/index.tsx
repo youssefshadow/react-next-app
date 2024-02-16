@@ -1,5 +1,6 @@
 import { Seo } from "@/ui/components/seo";
 import { Button } from "@/ui/design-system/button/button";
+import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import { RiUser6Fill, RiUDiskFill } from "react-icons/ri";
 
@@ -7,6 +8,11 @@ export default function Home() {
   return (
     <>
         <Seo title="Coding jungle" description="Description..."/>
+        <div className="flex items-center gap-4 p-10">
+            <Spinner size="small"></Spinner>
+            <Spinner size="medium"></Spinner>
+            <Spinner size="large"></Spinner>
+        </div>
        
 
         <div className="flex items-center gap-4 p-10">
