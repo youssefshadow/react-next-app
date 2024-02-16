@@ -24,16 +24,16 @@ export const Spinner = ({size="medium", variant="primary"}:Props) =>{
 
     switch (variant) {
         case "primary"://default
-            variantStyles = ""
+            variantStyles = "text-primary"
             break;
         case "white":
-            variantStyles = ""
+            variantStyles = "text-white"
             break;
     }
     
     return (
         <svg
-            className={clsx (sizeStyles,)}
+            className={clsx (sizeStyles,variantStyles,"animate-spin")}
             xmlns="http://www.w3.org/2000/svg"
            
             viewBox="0 0 24 24"
