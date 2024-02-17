@@ -1,41 +1,40 @@
+import clsx from "clsx";
+import Image from "next/image";
 import React from "react";
 
 interface Props {
-  size?: "very-small" | "small" | "medium" | "large";
+  size?: "small" | "medium" | "large";
 }
 
-export const Logo = ({ size = 'medium' }: Props) => {
-  let sizeLogo: number = 0;
+export const Avatar = ({ size = 'medium' }: Props) => {
+  let sizeStyles: string=""
   switch (size) {
-    case 'very-small':
-      sizeLogo = 20;
-      break;
     case 'small':
-      sizeLogo = 40;
+      sizeStyles ="w-[24px] h-[24px]" ;
       break;
     case 'medium':
-      sizeLogo = 60;
+      sizeStyles ="w-[34px] h-[34px]" ;
       break;
     case 'large':
-      sizeLogo = 80;
+      sizeStyles ="w-[50px] h-[50px]" ;
       break;
     default:
       break;
   }
 
   return (
-    <div>
-      <svg
-        style={{ width: sizeLogo, height: sizeLogo }}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-      >
-        {/* Logo rond avec une icône de code source */}
-        <circle cx="50" cy="50" r="45" fill="#6889A1" />
-        <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#C53049" fontSize="20" fontWeight="bold">
-          {"< / >"}
-        </text>
-      </svg>
+    <div className={clsx(sizeStyles,'bg-gray-400 rounded-full')}>
+      {/* <Image
+      src="/assets/images/avatar.webp"
+      alt="Avatar de Bruce wayne"
+      width={50}
+      height={50}
+      className="rounded-full"
+      
+      
+      
+      /> */}
+      
     </div>
   );
 };

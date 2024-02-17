@@ -4,6 +4,7 @@ import { Spinner } from "@/ui/design-system/spinner/spinner";
 import {Logo} from "@/ui/design-system/logo/logo"
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import { RiUser6Fill, RiUDiskFill } from "react-icons/ri";
+import { Avatar } from "@/ui/design-system/avatar/avatar";
 
 export default function Home() {
   return (
@@ -17,6 +18,18 @@ export default function Home() {
         <Logo size="small"/>
         <Logo/>
         <Logo size="large"/>
+        </div>
+        
+       
+      </div>
+      {/* Section Avatar */}
+      <div className="space-y-2">
+        <Typography variant="caption2" weight="medium">Avatar</Typography>
+        <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+        <Avatar size="small"/>
+        <Avatar/>
+        <Avatar size="large"/>
+
         </div>
         
        
