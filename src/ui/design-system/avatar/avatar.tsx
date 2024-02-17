@@ -3,10 +3,12 @@ import Image from "next/image";
 import React from "react";
 
 interface Props {
-  size?: "small" | "medium" | "large";
+  size?: "small" | "medium" | "large"|"large-xl";
+  src:string;
+  alt:string
 }
 
-export const Avatar = ({ size = 'medium' }: Props) => {
+export const Avatar = ({ size = 'medium',src, alt }: Props) => {
   let sizeStyles: string=""
   switch (size) {
     case 'small':
@@ -18,6 +20,9 @@ export const Avatar = ({ size = 'medium' }: Props) => {
     case 'large':
       sizeStyles ="w-[50px] h-[50px]" ;
       break;
+    case 'large-xl':
+      sizeStyles ="w-[500px] h-[500px]" ;
+      break;
     default:
       break;
   }
@@ -26,9 +31,9 @@ export const Avatar = ({ size = 'medium' }: Props) => {
     <div className={clsx(sizeStyles,'bg-gray-400 rounded-full relative')}>
       <Image
       fill
-      src="/assets/images/avatar.webp"
-      alt="Avatar de Bruce wayne"
-      className="rounded-full"
+      src={src}
+      alt={alt}
+      className="rounded-full object-cover object-center"
       
       
       

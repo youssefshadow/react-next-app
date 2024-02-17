@@ -26,9 +26,10 @@ export default function Home() {
       <div className="space-y-2">
         <Typography variant="caption2" weight="medium">Avatar</Typography>
         <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
-        <Avatar size="small"/>
-        <Avatar/>
-        <Avatar size="large"/>
+        <Avatar size="small" src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
+        <Avatar src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
+        <Avatar size="large" src="/assets/images/avata2.avif" alt="avatar bruce wayne"/>
+        <Avatar size="large-xl" src="/assets/images/dragon.webp" alt="avatar bruce wayne"/>
 
         </div>
         
