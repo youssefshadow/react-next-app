@@ -1,6 +1,7 @@
 import { Seo } from "@/ui/components/seo";
 import { Button } from "@/ui/design-system/button/button";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
+import {Logo} from "@/ui/design-system/logo/logo"
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import { RiUser6Fill, RiUDiskFill } from "react-icons/ri";
 
@@ -8,16 +9,28 @@ export default function Home() {
   return (
     <>
       <Seo title="Coding jungle" description="Description..." />
+      {/* Section logo */}
+      <div className="space-y-2">
+        <Typography variant="caption2" weight="medium">Logo</Typography>
+        <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+        <Logo size="very-small"/>
+        <Logo size="small"/>
+        <Logo/>
+        <Logo size="large"/>
+        </div>
+        
+       
+      </div>
 
       {/* Section 1 */}
-      <div className="flex items-center gap-4 p-10 border border-gray-300">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Spinner size="small"></Spinner>
         <Spinner size="medium"></Spinner>
         <Spinner size="large"></Spinner>
       </div>
 
       {/* Section 2 */}
-      <div className="flex items-center gap-4 p-5 border border-blue-300">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Button isLoading size="small" icon={{ icon: RiUser6Fill }} iconPosition="left">
           Accent
         </Button>
@@ -34,7 +47,7 @@ export default function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="flex items-center gap-4 p-10 border border-green-300">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Button size="small" icon={{ icon: RiUser6Fill }} iconPosition="left">
           Accent
         </Button>
@@ -51,7 +64,7 @@ export default function Home() {
       </div>
 
       {/* Section 4 */}
-      <div className="flex items-center gap-4 p-10 border border-purple-300">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Button>Accent</Button>
         <Button variant="secondary">Accent</Button>
         <Button variant="outline">Accent</Button>
@@ -62,7 +75,7 @@ export default function Home() {
       </div>
 
       {/* Section 5 */}
-      <div className="flex items-center gap-4 p-10 border border-yellow-300">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Button>Accent</Button>
         <Button size="large" variant="secondary">
           Accent
@@ -79,8 +92,8 @@ export default function Home() {
       </div>
 
       {/* Section Typography */}
-      <div className="space-y-5 p-10 border border-gray-300">
-        <Typography theme="primary" variant="h1" component="div">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+        <Typography theme="black" variant="h1" component="div">
           Aventure dans le monde du code
         </Typography>
         <Typography theme="secondary" variant="h1" component="div">
