@@ -23,17 +23,17 @@ export const Avatar = ({ size = 'medium' }: Props) => {
   }
 
   return (
-    <div className={clsx(sizeStyles,'bg-gray-400 rounded-full')}>
-      {/* <Image
+    <div className={clsx(sizeStyles,'bg-gray-400 rounded-full relative')}>
+      <Image
+      fill
       src="/assets/images/avatar.webp"
       alt="Avatar de Bruce wayne"
-      width={50}
-      height={50}
       className="rounded-full"
       
       
       
-      /> */}
+      
+      />
       
     </div>
   );
