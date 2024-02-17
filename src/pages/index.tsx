@@ -29,7 +29,7 @@ export default function Home() {
         <Avatar size="small" src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
         <Avatar src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
         <Avatar size="large" src="/assets/images/avata2.avif" alt="avatar bruce wayne"/>
-        <Avatar size="large-xl" src="/assets/images/dragon.webp" alt="avatar bruce wayne"/>
+        <Avatar size="large" src="/assets/images/dragon.webp" alt="avatar bruce wayne"/>
 
         </div>
         

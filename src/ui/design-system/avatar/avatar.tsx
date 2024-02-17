@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 interface Props {
-  size?: "small" | "medium" | "large"|"large-xl";
+  size?: "small" | "medium" | "large";
   src:string;
   alt:string
 }
@@ -19,9 +19,6 @@ export const Avatar = ({ size = 'medium',src, alt }: Props) => {
       break;
     case 'large':
       sizeStyles ="w-[50px] h-[50px]" ;
-      break;
-    case 'large-xl':
-      sizeStyles ="w-[500px] h-[500px]" ;
       break;
     default:
       break;
