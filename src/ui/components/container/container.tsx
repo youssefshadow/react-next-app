@@ -1,3 +1,4 @@
+import clsx from "clsx";
 interface Props {
     children:React.ReactNode;
     className?:string;
@@ -5,7 +6,7 @@ interface Props {
 }
 export const Container = ({children, className}: Props) => {
     return(
-        <div className="max-w-6xl py-10 max-auto space-y-5">
+        <div className={clsx(className, "w-full max-w-7xl py-10 max-auto mx-auto px-5 lg:px-10 ")}>
             {children}
 
         </div>

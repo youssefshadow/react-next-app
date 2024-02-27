@@ -1,39 +1,35 @@
 import { Seo } from "@/ui/components/seo/seo";
 import { Button } from "@/ui/design-system/button/button";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
-import {Logo} from "@/ui/design-system/logo/logo"
+import { Logo } from "@/ui/design-system/logo/logo";
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
-import { RiUser6Fill, RiUDiskFill } from "react-icons/ri";
+import { RiUser6Fill } from "react-icons/ri";
 import { Avatar } from "@/ui/design-system/avatar/avatar";
+import { Container } from "@/ui/components/container/container";
 
 export default function Home() {
   return (
-    <>
+    <Container className=" py-10 space-y-10">
       <Seo title="Coding jungle" description="Description..." />
+
       {/* Section logo */}
-      <div className="space-y-2">
+      <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Typography variant="caption2" weight="medium">Logo</Typography>
-        <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
         <Logo size="very-small"/>
         <Logo size="small"/>
         <Logo/>
         <Logo size="large"/>
-        </div>
-        
-       
       </div>
+
       {/* Section Avatar */}
       <div className="space-y-2">
         <Typography variant="caption2" weight="medium">Avatar</Typography>
         <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
-        <Avatar size="small" src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
-        <Avatar src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
-        <Avatar size="large" src="/assets/images/avata2.avif" alt="avatar bruce wayne"/>
-        <Avatar size="large" src="/assets/images/dragon.webp" alt="avatar bruce wayne"/>
-
+          <Avatar size="small" src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
+          <Avatar src="/assets/images/avatar.webp" alt="avatar bruce wayne"/>
+          <Avatar size="large" src="/assets/images/avata2.avif" alt="avatar bruce wayne"/>
+          <Avatar size="large" src="/assets/images/dragon.webp" alt="avatar bruce wayne"/>
         </div>
-        
-       
       </div>
 
       {/* Section 1 */}
@@ -126,6 +122,6 @@ export default function Home() {
           Écrivez votre propre histoire dans le langage binaire de la créativité
         </Typography>
       </div>
-    </>
+    </Container>
   );
 }
