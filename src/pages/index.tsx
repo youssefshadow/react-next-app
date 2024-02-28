@@ -6,11 +6,13 @@ import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import { RiUser6Fill } from "react-icons/ri";
 import { Avatar } from "@/ui/design-system/avatar/avatar";
 import { Container } from "@/ui/components/container/container";
+import { Navigation } from "@/ui/components/navigation/navigation";
 
 export default function Home() {
   return (
     <Container className=" py-10 space-y-10">
       <Seo title="Coding jungle" description="Description..." />
+      <Navigation/>
 
       {/* Section logo */}
       <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
