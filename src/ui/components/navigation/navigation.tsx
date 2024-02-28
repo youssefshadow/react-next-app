@@ -26,8 +26,9 @@ export const Navigation = ({}: Props) => {
         <div className="flex items-center gap-7">
           <Typography variant="caption3" component="div" className="flex items-center gap-7">
             <Link href="/design-system">Design system</Link>
-            <span>Projets</span>
-            <span>Projets</span>
+            <Link href="projets">Projets</Link>
+            <Link href="contacts">Contacts</Link>
+            <Link href="formations">Formations</Link>
           </Typography>
           <div className="flex items-center gap-2">
             <Button size="small">Connexion</Button>
