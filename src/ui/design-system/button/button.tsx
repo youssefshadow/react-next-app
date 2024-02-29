@@ -79,7 +79,7 @@ children,
     return (<>
    <button
             type="button"
-            className={clsx(variantStyle, icoSize, sizeStyle, isLoading && "cursor-wait", "relative")}
+            className={clsx(variantStyle, icoSize, sizeStyle, isLoading && "cursor-wait", "relative","animate")}
             onClick={() => console.log('Clicked Button')}
             disabled={disabled}
             >
