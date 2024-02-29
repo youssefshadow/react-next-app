@@ -13,3 +13,10 @@
 a:hover {
     @apply text-primary;
 }
+
+.animate, a, a:hover {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; /* Pour Chrome, Safari et Opera */
+    -moz-transition: all 0.2s ease-in-out; /* Pour Firefox */
+    -ms-transition: all 0.2s ease-in-out; /* Pour Internet Explorer pour ceux qui utilisent encore */
+}
