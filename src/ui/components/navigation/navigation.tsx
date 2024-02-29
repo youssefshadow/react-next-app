@@ -3,6 +3,7 @@ import { Container } from "../container/container";
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import { Button } from "@/ui/design-system/button/button";
 import Link from "next/link";
+import { ActiveLink } from "./active-link";
 
 interface Props {}
 
@@ -25,7 +26,7 @@ export const Navigation = ({}: Props) => {
         </Link>
         <div className="flex items-center gap-7">
           <Typography variant="caption3" component="div" className="flex items-center gap-7">
-            <Link href="/design-system">Design system</Link>
+            <ActiveLink href="/design-system">Design system</ActiveLink>
             <Link href="projets">Projets</Link>
             <Link href="contacts">Contacts</Link>
             <Link href="formations">Formations</Link>

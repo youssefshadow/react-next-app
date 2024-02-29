@@ -43,9 +43,10 @@ export default function DesignSystem() {
               </div>
             </div>
           </div>
+          
           {/* Section logo */}
           <div className="flex items-center gap-2 p-5 border border-gray-400 rounded mx-auto">
-            <Typography variant="caption2" weight="medium">Logo</Typography>
+          <Typography variant="caption3" weight="medium"> Logo </Typography>
             <Logo size="very-small"/>
             <Logo size="small"/>
             <Logo/>
