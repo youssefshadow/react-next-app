@@ -7,14 +7,14 @@ import { RiUser6Fill } from "react-icons/ri";
 import { Avatar } from "@/ui/design-system/avatar/avatar";
 import { Container } from "@/ui/components/container/container";
 import { Navigation } from "@/ui/components/navigation/navigation";
+import { Footer } from "@/ui/components/navigation/footer";
 
 export default function Home() {
   return (
     <>
       <Seo title="Coding jungle" description="Description..." />
       <Navigation />
-
-      
+      <Footer></Footer>
     </>
   );
 }
