@@ -3,6 +3,7 @@ import { Container } from "../container/container";
 import Image from "next/image";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="py-40 bg-gray">
       <Container className="flex justify-between pt-16">
@@ -29,7 +30,7 @@ export const Footer = () => {
         <hr className="text-gray-800" />
         <div className="flex items-center justify-between">
           <Typography variant="caption4" theme="gray">
-            © 2024 Coding Jungle. All rights reserved.
+            {`©  Coding Jungle ${currentYear}. All rights reserved.`}
           </Typography>
           <div className=""></div>
         </div>
