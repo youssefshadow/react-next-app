@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="py-40 bg-gray">
+    <div className=" bg-gray">
       <Container className="flex justify-between pt-16">
         <div className=" flex flex-col items-center gap-1">
           <Typography variant="caption1" theme="white" weight="medium">
@@ -26,11 +26,14 @@ export const Footer = () => {
 
         <div className="">Liste de liens</div>
       </Container>
-      <Container>
+      <Container className="pt-9 pb-11 space-y-11">
         <hr className="text-gray-800" />
         <div className="flex items-center justify-between">
           <Typography variant="caption4" theme="gray">
             {`©  Coding Jungle ${currentYear}. All rights reserved.`}
+            <a href="https://github.com/youssefshadow" target="_blank">
+              Youssef Shadow
+            </a>
           </Typography>
           <div className=""></div>
         </div>
