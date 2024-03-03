@@ -3,6 +3,7 @@ import { Container } from "../container/container";
 import Image from "next/image";
 import { footerApplicationLinks } from "./app-links";
 import { v4 as uuidv4 } from "uuid";
+import { ActiveLink } from "./active-link";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +32,9 @@ export const Footer = () => {
           </a>
         </div>
 
-        <div className="">{footerNavigationList}</div>
+        <div className="">
+          <FooterLink />
+        </div>
       </Container>
       <Container className="pt-9 pb-11 space-y-11">
         <hr className="text-gray-800" />
@@ -45,6 +48,39 @@ export const Footer = () => {
           <div className=""></div>
         </div>
       </Container>
+    </div>
+  );
+};
+
+const FooterLink = () => {
+  const linksList = footerApplicationLinks.map((link) => (
+    <div key={uuidv4()}>
+      {link.type === "internal" && (
+        <ActiveLink key={uuidv4()} href={link.baseUrl}>
+          {link.label}
+        </ActiveLink>
+      )}
+      {link.type === "external" && (
+        <a key={uuidv4()} href={link.baseUrl} target="_blank">
+          {link.label}
+        </a>
+      )}
+    </div>
+  ));
+
+  return (
+    <div className="min-w-[190px]">
+      <Typography
+        theme="white"
+        variant="caption2"
+        weight="medium"
+        className="pb-5"
+      >
+        Titre
+      </Typography>
+      <Typography theme="gray" variant="caption3" className="space-y-4">
+        {linksList.map((link) => [link])}
+      </Typography>
     </div>
   );
 };
