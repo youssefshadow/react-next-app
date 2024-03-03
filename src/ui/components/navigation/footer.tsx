@@ -4,6 +4,16 @@ import Image from "next/image";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const footerNavigationList = (
+    <div>
+      <ul>
+        <li>Lien1</li>
+        <li>Lien2</li>
+        <li>Lien3</li>
+      </ul>
+    </div>
+  );
+
   return (
     <div className=" bg-gray">
       <Container className="flex justify-between pt-16">
@@ -24,7 +34,7 @@ export const Footer = () => {
           </a>
         </div>
 
-        <div className="">Liste de liens</div>
+        <div className="">{footerNavigationList}</div>
       </Container>
       <Container className="pt-9 pb-11 space-y-11">
         <hr className="text-gray-800" />
