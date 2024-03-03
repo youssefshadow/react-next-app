@@ -1,18 +1,15 @@
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import { Container } from "../container/container";
 import Image from "next/image";
+import { footerApplicationLinks } from "./app-links";
+import { v4 as uuidv4 } from "uuid";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const footerNavigationList = (
-    <div>
-      <ul>
-        <li>Lien1</li>
-        <li>Lien2</li>
-        <li>Lien3</li>
-      </ul>
-    </div>
-  );
+  console.log(uuidv4());
+  const footerNavigationList = footerApplicationLinks.map((element) => (
+    <div key={uuidv4()}>{element.label}</div>
+  ));
 
   return (
     <div className=" bg-gray">

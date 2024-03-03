@@ -1,6 +1,6 @@
 import { AppLinks } from "@/types/app-links";
 
-const footerApplicationLinks: AppLinks[] = [
+export const footerApplicationLinks: AppLinks[] = [
   {
     label: "Accueil",
     baseUrl: "/",

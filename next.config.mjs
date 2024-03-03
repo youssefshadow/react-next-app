@@ -1,8 +1,8 @@
 // next.config.mjs
 
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
+  reactStrictMode: false,
+  output: "export",
   images: {
     unoptimized: true,
   },
