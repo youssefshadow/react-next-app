@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  console.log(uuidv4());
+
   const footerNavigationList = footerApplicationLinks.map((element) => (
     <div key={uuidv4()}>{element.label}</div>
   ));
