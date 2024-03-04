@@ -87,7 +87,7 @@ export const footerApplicationLinks: AppLinks[] = [
   },
 ];
 
-const footerLinks = [
+ export const footerLinks = [
   {
     label: "App",
     links:footerApplicationLinks,
