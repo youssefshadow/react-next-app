@@ -47,7 +47,7 @@ export const Footer = () => {
             </a>
           </Typography>
           <div className="">
-            <SocialNetworksButtons />
+            <SocialNetworksButtons theme="gray" />
           </div>
         </div>
       </Container>

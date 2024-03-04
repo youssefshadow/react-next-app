@@ -1,4 +1,10 @@
 import { AppLinks } from "@/types/app-links";
+import {
+  RiGithubFill,
+  RiLinkedinBoxFill,
+  RiLinkedinFill,
+  RiYoutubeFill,
+} from "react-icons/ri";
 
 export const footerApplicationLinks: AppLinks[] = [
   {
@@ -74,16 +80,19 @@ export const footerSocialNetworksLinks: AppLinks[] = [
     label: "Youtube",
     baseUrl: "https://www.youtube.com/",
     type: "external",
+    icon: RiYoutubeFill,
   },
   {
     label: "Linkedin",
     baseUrl: "https://www.linkedin.com/in/youssef-benslimane-264939228/",
     type: "external",
+    icon: RiLinkedinFill,
   },
   {
     label: "Github",
     baseUrl: "https://github.com/youssefshadow",
     type: "external",
+    icon: RiGithubFill,
   },
 ];
 
