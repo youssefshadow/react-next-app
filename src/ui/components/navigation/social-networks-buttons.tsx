@@ -24,6 +24,8 @@ export const SocialNetworksButtons = ({
       icon={{
         icon: socialNetwork.icon ? socialNetwork.icon : RiFacebookBoxFill,
       }}
+      baseUrl={socialNetwork.baseUrl}
+      linkType={socialNetwork.type}
     />
   ));
 
