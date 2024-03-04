@@ -23,7 +23,7 @@ export const footerApplicationLinks: AppLinks[] = [
   },
 ];
 
-const footerUserLinks: AppLinks[] = [
+ export const footerUserLinks: AppLinks[] = [
   {
     label: "Mon espace",
     baseUrl: "/#",
@@ -46,7 +46,7 @@ const footerUserLinks: AppLinks[] = [
   },
 ];
 
-const footerInformationsLinks: AppLinks[] = [
+ export const footerInformationsLinks: AppLinks[] = [
   {
     label: "CGU",
     baseUrl: "/#",
@@ -69,7 +69,7 @@ const footerInformationsLinks: AppLinks[] = [
   },
 ];
 
-const footerSocialNetworksLinks: AppLinks[] = [
+ export const footerSocialNetworksLinks: AppLinks[] = [
   {
     label: "Youtube",
     baseUrl: "https://www.youtube.com/",
@@ -86,3 +86,22 @@ const footerSocialNetworksLinks: AppLinks[] = [
     type: "external",
   },
 ];
+
+const footerLinks = [
+  {
+    label: "App",
+    links:footerApplicationLinks,
+  },
+  {
+    label: "Utilisateurs",
+    links:footerUserLinks,
+  },
+  {
+    label: "Informations",
+    links:footerInformationsLinks,
+  },
+  {
+    label: "Réseaux",
+    links:footerSocialNetworksLinks,
+  },
+]
