@@ -8,13 +8,13 @@ import { Avatar } from "@/ui/design-system/avatar/avatar";
 import { Container } from "@/ui/components/container/container";
 import { Navigation } from "@/ui/components/navigation/navigation";
 import { Footer } from "@/ui/components/navigation/footer";
+import { Layout } from "@/ui/components/layout/layout";
 
 export default function Home() {
   return (
     <>
       <Seo title="Coding jungle" description="Description..." />
-      <Navigation />
-      <Footer></Footer>
+      <Layout>Hello world</Layout>
     </>
   );
 }
