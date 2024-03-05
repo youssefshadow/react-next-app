@@ -27,7 +27,7 @@ export const HeroTopView = () => {
         </div>
       </div>
       <Image
-        src="/assets/images/rocket1.jpg"
+        src="/assets/svg/rocket.svg"
         alt="illustration cosmo"
         width={810}
         height={580}
