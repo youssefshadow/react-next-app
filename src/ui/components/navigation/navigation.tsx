@@ -9,23 +9,28 @@ interface Props {}
 
 export const Navigation = ({}: Props) => {
   return (
-    <div className=" w-full border-b-2 border-gray-400 ">
+    <div className="w-full border-b-2 border-gray-400 p-2.5">
       <Container className="flex items-center justify-between py-1.5 gap-7">
         <Link href="/">
-            <div className="flex items-center gap-2.5">
-              <Logo size="small" />
-              <div className="flex flex-col">
-                <div className="text-gray font-extrabold text-[24px]">
-                  Coding Jungle
-                </div>
-                <Typography variant="caption4" theme="gray" component="span">
-                  Plonge dans l&apos;univers de l&apos;inspiration tout en recevant des feedbacks
-                </Typography>
+          <div className="flex items-center gap-2.5">
+            <Logo size="small" />
+            <div className="flex flex-col">
+              <div className="text-gray font-extrabold text-[24px]">
+                Coding Jungle
               </div>
+              <Typography variant="caption4" theme="gray" component="span">
+                Plonge dans l&apos;univers de l&apos;inspiration tout en
+                recevant des feedbacks
+              </Typography>
             </div>
+          </div>
         </Link>
         <div className="flex items-center gap-7">
-          <Typography variant="caption3" component="div" className="flex items-center gap-7">
+          <Typography
+            variant="caption3"
+            component="div"
+            className="flex items-center gap-7"
+          >
             <ActiveLink href="/design-system">Design system</ActiveLink>
             <Link href="projets">Projets</Link>
             <Link href="contacts">Contacts</Link>
@@ -33,12 +38,10 @@ export const Navigation = ({}: Props) => {
           </Typography>
           <div className="flex items-center gap-2">
             <Button size="small">Connexion</Button>
-            <Button size="small" variant="secondary">Rejoindre</Button>
-
-
+            <Button size="small" variant="secondary">
+              Rejoindre
+            </Button>
           </div>
-          
-
         </div>
       </Container>
     </div>
