@@ -6,7 +6,7 @@ export const LandingPageView = () => {
     <>
       {" "}
       <HeroTopView />
-      <Featured />
+      <Featured></Featured>
     </>
   );
 };
