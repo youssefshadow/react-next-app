@@ -1,7 +1,9 @@
 import { Container } from "@/ui/components/container/container";
+import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import Image from "next/image";
 import { features } from "process";
+import { RiArrowRightLine } from "react-icons/ri";
 import { v4 as uuidv4 } from "uuid";
 
 export interface FeaturesListInterface {
@@ -43,7 +45,13 @@ export const Featured = () => {
       key={uuidv4()}
       className="flex flex-col items-center justify-center bg-white rounded p-7"
     >
-      <div className=" relative w-[130px] h-[130px] rounded-full mb-6 p-10 bg-gray-400">
+      <div className=" relative w-[130px] h-[130px] rounded-full mb-6 p-10  overflow-hidden">
+        <Image
+          fill
+          src={feature.imagePath}
+          alt={feature.imageAlt}
+          className="object-scale-down blur-2xl"
+        />
         <Image
           fill
           src={feature.imagePath}
@@ -73,7 +81,30 @@ export const Featured = () => {
     <div className="bg-gray-300 ">
       <Container className="grid grid-cols-12 gap-24 py-24">
         <div className="grid grid-cols-2 col-span-7 gap-7">{featuredList}</div>
-        <div className="col-span-5"></div>
+        <div className="col-span-5">
+          <div>
+            <Typography variant="h2" component="h2" className="mb-5">
+              L'endroit parfait pour apprendre à coder
+            </Typography>
+            <Typography
+              variant="body-lg"
+              component="p"
+              theme="gray"
+              className="mb-8"
+            >
+              L'endroit parfait pour apprendre à coder
+            </Typography>
+            <Button
+              variant="secondary"
+              baseUrl="#"
+              icon={{ icon: RiArrowRightLine }}
+              iconPosition="right"
+            >
+              Commencer
+            </Button>
+          </div>
+          <div></div>
+        </div>
       </Container>
     </div>
   );
