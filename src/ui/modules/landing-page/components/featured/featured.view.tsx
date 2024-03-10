@@ -1,4 +1,5 @@
 import { Container } from "@/ui/components/container/container";
+import { SocialNetworksButtons } from "@/ui/components/navigation/social-networks-buttons";
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typoghraphy/typography";
 import Image from "next/image";
@@ -81,7 +82,7 @@ export const Featured = () => {
     <div className="bg-gray-300 ">
       <Container className="grid grid-cols-12 gap-24 py-24">
         <div className="grid grid-cols-2 col-span-7 gap-7">{featuredList}</div>
-        <div className="col-span-5">
+        <div className=" flex flex-col justify-between col-span-5 gap-10">
           <div>
             <Typography variant="h2" component="h2" className="mb-5">
               L'endroit parfait pour apprendre à coder
@@ -92,7 +93,9 @@ export const Featured = () => {
               theme="gray"
               className="mb-8"
             >
-              L'endroit parfait pour apprendre à coder
+              L'application prend en charge le partage, les connexions et les
+              formations pour toi. Rejoins notre communauté et progresse en
+              niveau. C'est parti !
             </Typography>
             <Button
               variant="secondary"
@@ -103,7 +106,17 @@ export const Featured = () => {
               Commencer
             </Button>
           </div>
-          <div></div>
+          <div>
+            <Typography
+              variant="caption3"
+              component="div"
+              theme="gray"
+              className="mb-4"
+            >
+              Rejoins-nous!
+            </Typography>
+            <SocialNetworksButtons />
+          </div>
         </div>
       </Container>
     </div>
